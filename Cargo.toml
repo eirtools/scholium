@@ -1,0 +1,12 @@
+[workspace]
+members = ["crates/cargo-scholium", "crates/scholium", "crates/scholium-core"]
+resolver = "3"
+
+[workspace.package]
+version = "0.0.1"
+edition = "2021"
+license = "MIT"
+
+[workspace.dependencies]
+scholium = { version = "=0.0.1", path = "crates/scholium" }
+scholium-core = { version = "=0.0.1", path = "crates/scholium-core" }

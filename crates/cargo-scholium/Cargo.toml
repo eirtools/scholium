@@ -1,0 +1,13 @@
+[package]
+name = "cargo-scholium"
+
+description = "cargo-scholium"
+readme = "cargo-io.md"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+
+scholium = { workspace = true }
+scholium-core = { workspace = true }

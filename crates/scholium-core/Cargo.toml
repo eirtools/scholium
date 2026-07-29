@@ -1,0 +1,11 @@
+[package]
+name = "scholium-core"
+
+description = "scholium-core"
+readme = "cargo-io.md"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version = "1.71"
+
+[dependencies]
