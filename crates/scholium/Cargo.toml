@@ -1,12 +1,19 @@
 [package]
 name = "scholium"
 
-description = "scholium"
+description = "User-defined `clippy`-like structured self-reported annotations"
 readme = "cargo-io.md"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
+publish.workspace = true
+repository.workspace = true
+keywords.workspace = true
+authors.workspace = true
 rust-version = "1.71"
+
+[lib]
+proc-macro = true
 
 [dependencies]
 scholium-core = { workspace = true }

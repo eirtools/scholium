@@ -1,0 +1,25 @@
+display-name = "Third-party library requests & issues"
+
+[report.tracing_missing]
+severity = "info"
+display-name = "Tracing library implementation requested"
+short-message = ""
+documentation = """
+Feature request for tracing library.
+
+== Recommended action
+
+Proceed to linked issue/PR and engage, e.g. upvote.
+"""
+
+[report.tracing_unstable]
+severity = "debug"
+display-name = "Tracing library unstable implementation"
+short-message = "Unstable implementation"
+documentation = """
+Used unstable implementation of tracing library.
+
+== Recommended action
+
+Proceed to linked issue/PR and engage, e.g. upvote.
+"""

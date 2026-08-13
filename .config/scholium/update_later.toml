@@ -1,0 +1,17 @@
+display-name = "Notification to return later when conditions are met"
+
+[report.rust_1_96]
+severity = "suppress"
+display-name = "Rust 1.96.0 or later"
+short-message = "Implemented in Rust 1.96.0"
+documentation = """
+= Rust 1.96.0 or later
+
+Rust 1.96.0 introduces multiple language improvements which could be used if MSRV is high enough.
+
+== Recommended action
+
+Wait for MSRV to be high enough and implement action.
+"""
+
+[report]

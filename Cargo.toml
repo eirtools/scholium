@@ -3,10 +3,23 @@ members = ["crates/cargo-scholium", "crates/scholium", "crates/scholium-core"]
 resolver = "3"
 
 [workspace.package]
-version = "0.0.1"
+version = "0.1.0"
 edition = "2021"
 license = "MIT"
+repository = "https://github.com/eirtools/scholium"
+publish = true
+keywords = ["todo", "report", "quality"]
+authors = [ "Eir Nym eirnym@gmail.com"]
 
 [workspace.dependencies]
-scholium = { version = "=0.0.1", path = "crates/scholium" }
-scholium-core = { version = "=0.0.1", path = "crates/scholium-core" }
+scholium = { version = "=0.1.0", path = "crates/scholium" }
+scholium-core = { version = "=0.1.0", path = "crates/scholium-core" }
+
+proc-macro2 = { version = "1.0.107" }
+syn = { version = "3.0.3", default-features = false }
+
+rstest = { version = "0.26.1" }
+
+tracing = { version = "0.1.44" }
+tracing-log = { version = "0.2.0" }
+tracing-subscriber = { version = "0.3.23" }

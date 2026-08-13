@@ -1,0 +1,36 @@
+display-name = "Tracing related reports"
+
+[report.syn_error_pretty_print]
+severity = "warning"
+display-name = "Pretty-print syn errors"
+short-message = "syn::Error should be pretty printed"
+documentation = """
+syn::Error with filename and contains quite a lot of information to be printed.
+
+== Recommended action
+
+Create pretty printer for `syn::Error`.
+"""
+
+[report.syn_error_report]
+severity = "warning"
+display-name = "Per-field report syn errors"
+short-message = "syn::Error contains quite a lot of information which should be reported"
+documentation = """
+syn::Error contains quite a lot of information which should be reported.
+
+== Recommended action
+
+use code like:
+
+```rust
+tracing::error!(
+    file = %path.display(),
+    line = loc.line,
+    column = loc.column + 1,
+    source_line = %source.lines().nth(loc.line - 1).unwrap_or(""),
+    message = %err,
+    "parse error"
+);
+```
+"""

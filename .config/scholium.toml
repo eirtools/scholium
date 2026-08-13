@@ -1,0 +1,7 @@
+[profile.ci.overrides]
+"update_later::rust" = "suppress"
+
+[profile.pedantic.overrides]
+
+update_later = "warn"
+tracing = "error"

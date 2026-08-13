@@ -1,0 +1,37 @@
+display-name = "Tool-specific marks"
+
+[report.future_imp]
+severity = "info"
+display-name = "Future implementation"
+short-message = "Implement in the future"
+documentation = """
+Non-implemented feature.
+
+== Recommended action
+
+Implement requested feature.
+"""
+
+[report.before_release_imp]
+severity = "error"
+display-name = "Implement before release"
+short-message = "Feature must be implemented before release"
+documentation = """
+Non-implemented feature required for release.
+
+== Recommended action
+
+Implement requested feature before release.
+"""
+
+[report.future_question]
+severity = "debug"
+display-name = "Unanswered question"
+short-message = "Answer question"
+documentation = """
+Unanswered question.
+
+== Recommended action
+
+Discuss, make decision and implement (if needed).
+"""
